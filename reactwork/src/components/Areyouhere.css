@@ -1,0 +1,8 @@
+
+.homepage-background {
+  background-image: url('/images/background.jpg'); /* Use your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh; /* Full viewport height */
+}

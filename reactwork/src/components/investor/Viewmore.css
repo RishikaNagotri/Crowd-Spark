@@ -1,0 +1,165 @@
+
+/* General Styles */
+.founder-profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 5rem;
+box-shadow: 0 10px 25px rgba(0, 200, 255, 0.438);
+  background-color: #f5f7fa;
+}
+
+/* Card Styles */
+.founder-card {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+
+/* Header Section */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.founder-name {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.8rem;
+}
+
+.verification-badge {
+  background: #27ae60;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Startup Info */
+.startup-info {
+  margin-bottom: 1.5rem;
+}
+
+.startup-name {
+  margin: 0 0 0.5rem 0;
+  color: #3498db;
+  font-size: 1.4rem;
+}
+
+.sector-tag {
+  display: inline-block;
+  background: #e0f7fa;
+  color: #00838f;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Budget Section */
+.budget-section {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.budget-label {
+  font-weight: bold;
+  color: #7f8c8d;
+}
+
+.budget-amount {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Description */
+.description-box {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Contact Details */
+.contact-details {
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.contact-icon {
+  margin-right: 0.8rem;
+  font-size: 1.2rem;
+}
+
+/* Button */
+.back-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #2980b9;
+}
+
+/* Loading and Error States */
+.loading-container,
+.error-card,
+.not-found-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.loading-spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-card,
+.not-found-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  margin: 2rem auto;
+}

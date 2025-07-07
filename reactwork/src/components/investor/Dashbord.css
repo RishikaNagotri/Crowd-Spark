@@ -1,0 +1,95 @@
+
+
+.dashboard-wrapper {
+  padding: 40px;
+  background: #f0f2f5;
+  min-height: 100vh;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #003566;
+  margin: 60px auto 30px auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.founders-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+.founder-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 8px 20px rgba(0, 198, 255, 0.2);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.founder-card::before {
+  content: "";
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  z-index: -1;
+  border-radius: 22px;
+}
+
+
+.founder-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.founder-card p {
+  font-size: 0.95rem;
+  margin: 6px 0;
+  color: #444;
+}
+
+.details-button {
+  margin-top: 20px;
+  width: 100%;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.details-button:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+@media screen and (max-width: 992px) {
+  .founders-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .founders-grid {
+    grid-template-columns: 1fr;
+  }
+}

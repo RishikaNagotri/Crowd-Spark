@@ -1,0 +1,112 @@
+.founder-register-container {
+  height:737px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  background: #f0f2f5;
+}
+
+.founder-register-box {
+  display: flex;
+  width: 95%;
+  min-height: 80vh;
+  max-width: 1200px;
+  background-color: #fff;
+ box-shadow: 0 8px 20px rgba(0, 200, 255, 0.438);
+}
+
+.founder-register-left {
+   background: url('../founder.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 50px;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.founder-register-left::after {
+  content: "";
+  position: absolute;
+  top: 13.7%; left: 10.8%; width: 27.5%; height: 80%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.founder-register-left-content {
+  position: relative;
+  z-index: 1;
+}
+
+.founder-register-left-content h2 {
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
+.founder-register-left-content p {
+  line-height: 1.8;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.founder-register-right {
+  padding: 10px;
+  width: 85%;
+  margin-left: 20px;
+}
+
+.founder-register-right h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #003576;
+}
+
+.founder-register-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.field-group {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.field-group-full {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.register-button {
+  text-align: center;
+  margin-top: 30px;
+  width: 100vh;
+  
+}
+
+.register-btn  {
+  font-weight: bold;
+  background-color: #003576;
+    margin-top: 0px;
+  width: 100vh;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.signin-redirect {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.signin-redirect a {
+  font-weight: bold;
+  color: #003576;
+}
+
